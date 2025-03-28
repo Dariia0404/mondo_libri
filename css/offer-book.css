@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url('../img/f99.jpg');
+    background-size: cover; /* Зображення покриває весь екран */
+    background-position: center center; /* Зображення буде по центру */
+    background-repeat: no-repeat; /* Зображення не повторюється */
+}
+
+
+/*----------------------------HEADER--------------------------------------------------*/
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/foon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+header .titolo {
+    font-family: Caveat;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 230px;
+    height: auto;
+    position: relative;
+    top: -100px;
+    margin-left: -20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    top: -270px;
+
+}
+
+.navbar ul {
+    font-size: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: 90px;
+
+}
+
+.navbar li {
+    margin-right: 50px;
+}
+
+.navbar a {
+    font-family: Italiana;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+    background-color: rgba(165,157,131,0.31);
+    padding: 10px;
+}
+
+
+
+/*--------------------------------------ANY BOOKS/OFFER------------------------------------------------*/
+.offer-book {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: Josefin Slab;
+    margin-top: 20px;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.photo-book {
+    margin-right: 20px;
+}
+
+.photo {
+    max-width: 400px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.book-details {
+    width: 70%;
+    height: 500px;
+    position: relative;
+    margin-left: 400px;
+    top: -500px;
+    color: white;
+}
+
+.book-details h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Josefin Slab;
+    margin-left: -300px;
+}
+
+.book-details {
+    margin-bottom: 10px;
+    font-family: Josefin Slab;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+.book-details h4 {
+    margin-bottom: 10px;
+    font-family: Josefin Slab;
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+}
+
+.book-details p, s{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: left;
+    margin-left: 0;
+}
+
+.add-to-cart-form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.add-to-cart-form input[type="number"] {
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid gold;
+    border-radius: 4px;
+}
+
+.libri {
+    position: relative;
+    top: -500px;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.libri a {
+    margin-right: 20px;
+}
+
+form[method="POST"] {
+    text-align: left;
+}
+
+form[method="POST"] button {
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    background-color: goldenrod;
+}
+
+form[action="checkout.php"] button:hover {
+    background-color: darkgoldenrod;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------CARRELLO------------------------------------------------------*/
+
+/* Заголовок кошика */
+h1.cart {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Стилі для таблиці кошика */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+td input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+td button {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #2ecc71;
+}
+
+td a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для загальної суми */
+p {
+    font-size: 1.5em;
+    text-align: right;
+    margin-right: 10%;
+    color: #2c3e50;
+}
+
+/* Кнопка оформлення замовлення */
+form button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d35400;
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    h1.cart {
+        font-size: 2em;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    td input[type="number"] {
+        width: 40px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-right: 5%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+
+
+/*---------------------------------FOOTER-----------------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #22221ac2;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-top: auto;
+    bottom: 0;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+footer .Newsletter {
+    position: relative;
+    margin-left: 0;
+}
+
+.Newsletter h3 {
+    position: relative;
+    margin-left: -180px;
+}
+
+footer .info {
+    position: relative;
+    top: 30px;
+    flex: 1 1 30%;
+    margin: 30px;
+}
+
+.MondoDeiLibri {
+    position: relative;
+    top: 10px;
+    flex: 1 1 30%;
+    margin: 30px;
+}
+
+.mondo a {
+    margin-right: 100px;
+}
+
+.mailto a {
+    position: relative;
+    margin-right: -150px;
+}
+
+.MondoDeiLibri p {
+    position: relative;
+    margin-right: -170px;
+    margin-top: 80px;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer input {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer .payment-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+
+footer .payment-icons img {
+    width: 40px;
+    height: 20px;
+    margin: 10px;
+}

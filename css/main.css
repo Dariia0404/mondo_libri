@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url('img/f99.jpg');
+    background-size: cover; /* Зображення покриває весь екран */
+    background-position: center center; /* Зображення буде по центру */
+    background-repeat: no-repeat; /* Зображення не повторюється */
+}
+
+
+/*----------------------------HEADER--------------------------------------------------*/
+header {
+    width: 100%; 
+    height: 200px; 
+    background-image: url('../img/foon.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header .titolo {
+    font-family: Caveat;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 230px; 
+    height: auto;
+    position: relative;
+    top: -100px;
+    margin-left: -20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;  
+    width: 100%; 
+    position: relative;
+    top: -270px;
+    
+}
+
+.navbar ul {
+    font-size: 30px;
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    position: relative;
+    top: 90px;
+    
+}
+
+.navbar li {
+    margin-right: 50px; 
+}
+
+.navbar a {
+    font-family: Italiana;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+    background-color: rgba(165,157,131,0.31);
+    padding: 10px;
+}
+
+/*---------------------------------SLIDE-IMAGE-------------------------------------------*/
+
+body, html {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    position: relative;
+    top: -36px;
+    width: 90%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    left: 150px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-image {
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+    opacity: 1;
+}
+
+
+/*----------------------------ACCOUNT/ICON----------------------------------------------------*/
+.log-in {
+    position: fixed;
+    top: 0;
+    right: 5px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid white;
+    z-index: 10;
+}
+
+.log-in a {
+    color: white;
+}
+/*---------------------------------LOGIN/REGISTER----------------------------------------------*/
+
+
+.log {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 90%;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.log h2.slogan {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.log label {
+    display: block;
+    color: black;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.log input[type="text"],
+.log input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.log input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 820px;
+}
+
+.log input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.log h4 {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 700px;
+}
+
+.log h4 a {
+    color: #4CAF50;
+    text-decoration: none;
+    position: relative;
+    margin-left: 40px;
+}
+
+.log h4 a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------------------OFFER/INDEX------------------------------------------------------------*/
+
+
+.offer {
+    position: relative;
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    font-family: Josefin Slab;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book {
+    margin-top: -100px;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.book-image {
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s
+}
+
+.book img:hover {
+    transform: scale(1.2);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure s {
+    color: white;
+}
+
+figcaption {
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+    font-family: Josefin Slab;
+}
+
+/*--------------------------------------ANY BOOKS/OFFER------------------------------------------------*/
+.offer-book {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    margin-top: 20px;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.photo-book {
+    margin-right: 20px;
+}
+
+.photo {
+    max-width: 400px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.book-details {
+    width: 70%;
+    height: 500px;
+    position: relative;
+    margin-left: 400px;
+    top: -500px;
+    color: black;
+}
+
+.book-details h1 {
+    color: black;
+    margin-left: -300px;
+}
+
+.book-details {
+    margin-bottom: 10px;
+    font-family: Josefin Slab;
+    font-size: 45px;
+    color: black;
+    position: relative;
+    margin-top: 20px;
+}
+
+.book-details h4 {
+    margin-bottom: 10px;
+    font-family: Josefin Slab;
+    text-align: justify;
+    font-size: 25px;
+    color: black;
+}
+
+.book-details p, s{
+    color: black;
+    display: flex;
+    justify-content: left;
+    margin-left: 0;
+}
+
+.add-to-cart-form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.add-to-cart-form input[type="number"] {
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.libri {
+    position: relative;
+    top: -500px;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.libri a {
+    margin-right: 20px;
+}
+
+form[method="POST"] {
+    text-align: left;
+}
+
+form[method="POST"] button {
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    background-color: forestgreen;
+}
+
+form[action="checkout.php"] button:hover {
+    background-color: lawngreen;
+}
+
+
+/*---------------------------------------CHISIAMO----------------------------------------------------------*/
+
+
+.testo, h1 {
+  color: white;
+  font-family: Josefin Slab;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sottotitolo, p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+/*-----------------------------------------FORM/INPUT--------------------------------------------------------*/
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3s ease;
+    z-index: 1;
+}
+
+.search-button {
+    width: 15px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+/*-----------------------------------------CATALOGO--------------------------------------------------------*/
+
+.prodotti, h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.categorie {
+  display: flex;
+  width: 100%;
+  height: 200px; 
+  justify-content: space-around; 
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+  position: relative; 
+  top: -60px;
+}
+
+.categorie li {
+  display: flex; 
+  align-items: center; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categorie a {
+  color: white;
+  font-family: Bodoni Moda SC;
+  font-size: 20px;
+    font-weight: bold;
+  display: flex;
+  list-style-type: none; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 5px;
+}
+
+.categorie img {
+  margin-top: 8px; 
+  max-width: 100px;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hover-image {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    display: none;
+    opacity: 0.9;
+    width: 110px;
+    height: 150px;
+}
+
+.link:hover .hover-image {
+    display: block;
+}
+
+
+/*------------------------------------SERVICE--------------------------------------------------------*/
+
+.text, h2 {
+  color: white;
+  font-family: Domine;
+  text-align: center;
+    margin-top: -10px;
+}
+
+.proposte, h3 {
+    color: white;
+    font-family: Domine;
+    line-height: 0;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.domande, h2{
+    color: white;
+    font-family: Domine;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.paragraph, p {
+  color: rgb(255, 255, 255);
+  font-family: Josefin Slab;
+  text-align: center;
+  justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+/*---------------------------------FOOTER-----------------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #22221ac2;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-top: auto;
+    bottom: 0;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  footer .Newsletter {
+    position: relative;
+    margin-left: 0;
+  }
+
+  .Newsletter h3 {
+      position: relative;
+      margin-left: -180px;
+  }
+
+  footer .info {
+      position: relative;
+      top: 30px;
+    flex: 1 1 30%; 
+    margin: 30px;
+  }
+  
+  .MondoDeiLibri {
+      position: relative;
+      top: 10px;
+      flex: 1 1 30%;
+      margin: 30px;
+  }
+
+  .mondo a {
+      margin-right: 100px;
+  }
+
+  .mailto a {
+      position: relative;
+      margin-right: -150px;
+  }
+
+  .MondoDeiLibri p {
+      position: relative;
+      margin-right: -170px;
+      margin-top: 80px;
+  }
+
+  footer h3, footer h4 {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer input {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%; 
+    max-width: 250px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  footer .payment-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    top: -20px;
+  }
+  
+  footer .payment-icons img {
+    width: 40px;
+    height: 20px;
+    margin: 10px;
+  }
+
+
